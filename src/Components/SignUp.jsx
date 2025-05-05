@@ -39,7 +39,7 @@ const SignUp = () => {
 
     return (
         <div className="insight-container" style={{ backgroundColor: "black", height: "100vh" }}>
-            <FlowyCursor/>
+            
             <div className="row g-6">
                 <div className="col-md-6 d-flex align-items-center justify-content-center text-white p-5">
                     <div style={{ width: "100%", maxWidth: "550px" }}>

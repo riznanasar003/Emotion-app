@@ -6,9 +6,7 @@ const About = () => {
   return (
     <div>
     <Navbar/>
-    <FlowyCursor/>
     <div className="about-container">
-       
       <h1 className="about-title" style={{backgroundImage: "linear-gradient(45deg, #00008B, #4B0082, #8A2BE2, #FF00FF, #00FFFF)",
                                         WebkitBackgroundClip: "text",
                                         WebkitTextFillColor: "transparent"}}>About Our Project</h1>
@@ -16,7 +14,16 @@ const About = () => {
         Discover how our Malayalam emotion analysis system helps cosmetic companies
         improve their products through social media insights.
       </p>
-        
+      <center>
+                        <h2 style={{
+                            fontFamily: "serif",
+                            backgroundImage: "linear-gradient(45deg, #00008B, #4B0082, #8A2BE2, #FF00FF, #00FFFF)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            fontWeight: "bold"
+                        }}><img src="beauty2.jpg" width="100" height="120" /> EMO-MOZHI <img src="beauty1.jpg" width="100" height="120" /></h2>
+
+                    </center>
       <div className="about-card">
         <h2 className="about-heading">Our Mission</h2>
         <p>

@@ -5,6 +5,10 @@ import SignUp from './Components/SignUp';
 import Login from './Components/Login';
 import Home from './Components/Home';
 import About from './Components/About';
+import History from './Components/History';
+import SentimentChart from './Components/SentimentChart';
+
+
 
 function App() {
   return (
@@ -15,6 +19,10 @@ function App() {
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
+      <Route path='/history' element={<History/>}/>
+      <Route path='/sentiment' element={<SentimentChart/>}/>
+   
+      
       
     </Routes>
     </BrowserRouter>

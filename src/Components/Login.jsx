@@ -22,6 +22,8 @@ const Login = () => {
             if (response.data.status === "success") {
                 sessionStorage.setItem("token", response.data.token);
                 sessionStorage.setItem("userId", response.data.userId);
+                sessionStorage.setItem("username", response.data.username); // Store username
+                sessionStorage.setItem("emailid", response.data.emailid); // Store emailid
                 navigate("/home");
             } else {
                 alert(response.data.status);
@@ -31,10 +33,12 @@ const Login = () => {
             alert("An error occurred during login.");
         }
     };
+    
+    
 
     return (
         <div className="insight-container" style={{ backgroundColor: "black", height: "100vh" }}>
-            <FlowyCursor/>
+          
             <div className="row g-6">
                 <div className="col-md-6 d-flex align-items-center justify-content-center text-white p-5">
                     <div style={{ width: "100%", maxWidth: "550px" }}>
